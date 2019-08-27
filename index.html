@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LYTTONE</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="audiobooks, recording studio, audiolibros, estudio de grabacion" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="img/LytTonefavicon.png" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Imperial
+    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+<style>
+  .punt {
+    cursor: default
+  }
+</style>
+
+<body>
+  <div id="app">
+
+    <div id="preloader"></div>
+
+    <!--==========================
+  Hero Section
+  ============================-->
+    <section id="hero">
+      <div class="hero-container">
+        <div style="display:flex; justify-content: flex-end; position:sticky; top:0">
+          <div
+            style=" display:flex; flex-direction:column; background-color:#111; width:fit-content; padding:1%; padding-bottom: 0; border-radius: 5px">
+            <h6 @click="language" data-lang="ENG" style="display: inline; flex:1; cursor:default">ENG</h6>
+            <h6 @click="language" data-lang="SPA" style="display: inline; flex:1; cursor:default">SPA</h6>
+            <h6 @click="language" data-lang="POR" style="display: inline; flex:1; cursor:default">POR</h6>
+          </div>
+        </div>
+        <div class="wow fadeIn">
+          <div class="hero-logo">
+            <img class="" src="img/lyttone.png" alt="Imperial">
+          </div>
+
+          <h1 id="titulo">{{textos.welcome}}</h1>
+          <h2> {{textos.tit}}<br>{{textos.tit2}} </h2>
+          <div class="actions">
+            <a href="#about" class="btn-services">{{textos.startButt}}</a>
+            <a href="#services" class="btn-services">{{textos.servButt}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+  Header Section
+  ============================-->
+    <header id="header">
+      <div class="container">
+
+        <div id="logo" class="pull-left">
+          <a href="#hero"><img src="img/lyttone.png" alt="" title="" style="padding: 2%" /></img></a>
+
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#hero">{{textos.home}}</a></li>
+            <li><a href="#about">{{textos.aboutTitle}}</a></li>
+            <li><a href="#services">{{textos.servTitle}}</a></li>
+
+            <li><a href="#contact">{{textos.contactTitle}}</a></li>
+            <li class="menu-has-children punt"><a>LNG</a>
+              <ul>
+                <li @click="language" data-lang="ENG" class="punt">ENG</li>
+                <li @click="language" data-lang="SPA" class="punt"> SPA</li>
+                <li @click="language" data-lang="POR" class="punt"> POR</li>
+
+              </ul>
+            </li>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+  About Section
+  ============================-->
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">{{textos.aboutTitle}}</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container wow fadeInUp">
+        <div class="row">
+
+          <div class="col-lg-6 about-img">
+            <img src="img/Photo_by_Tom_Pottiger_on_Unsplash.jpg" alt="">
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">{{textos.aboutSubTitle}}</h2>
+            <p class="about-text">{{textos.aboutP}}
+            </p>
+            <p class="about-text">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+  Services Section
+  ============================-->
+    <section id="services">
+      <div class="container wow fadeInUp">
+        <!---->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">{{textos.servTitle}}</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">{{textos.servSubTitle}}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 service-item">
+            <div class="service-icon"><i class="fa fa-book"></i></div>
+            <h4 class="service-title"><a href="">{{textos.assesTitle}}</a></h4>
+            <p class="service-description">{{textos.assesP}} </p>
+          </div>
+          <div class="col-md-6 service-item">
+            <div class="service-icon"><i class="fa fa-users"></i></div>
+            <h4 class="service-title"><a href="">{{textos.talentTitle}}</a></h4>
+            <p class="service-description">{{textos.talentP}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 service-item">
+            <div class="service-icon"><i class="fa fa-microphone"></i></div>
+            <h4 class="service-title"><a href="">{{textos.recTitle}}</a></h4>
+            <p class="service-description">{{textos.recP}}</p>
+          </div>
+          <div class="col-md-6 service-item">
+            <div class="service-icon"><i class="fa fa-check"></i></div>
+            <h4 class="service-title"><a href="">{{textos.proofTitle}}</a></h4>
+            <p class="service-description">{{textos.proofP}}<br><br>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 service-item">
+              <div class="service-icon"><i class="fa fa-star-o"></i></div>
+              <h4 class="service-title"><a href="">{{textos.masterTitle}}</a></h4>
+              <p class="service-description">{{textos.masterP}}
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+    </section>
+
+    <!--==========================
+  Contact Section
+  ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">{{textos.contactTitle}}</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-md-push-2">
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Castillo 1782<br>Buenos Aires, 1414<br>Argentina</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>hello@lyttone.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+54 911 5335 4532</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-5 col-md-push-2">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+  Footer
+============================-->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Lyttone LLC</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+  </div>
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/mivue.js"></script>
+</body>
+
+</html>
