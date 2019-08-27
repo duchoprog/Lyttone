@@ -67,7 +67,7 @@
             style=" display:flex; flex-direction:column; background-color:#111; width:fit-content; padding:1%; padding-bottom: 0; border-radius: 5px">
             <h6 @click="language" data-lang="ENG" style="display: inline; flex:1; cursor:default">ENG</h6>
             <h6 @click="language" data-lang="SPA" style="display: inline; flex:1; cursor:default">SPA</h6>
-            <h6 @click="language" data-lang="POR" style="display: inline; flex:1; cursor:default">POR</h6>
+            <h6 @click="language" data-lang="POR" style="display: inline; flex:1; cursor:default; display: none ">POR</h6>
           </div>
         </div>
         <div class="wow fadeIn">
@@ -107,7 +107,7 @@
               <ul>
                 <li @click="language" data-lang="ENG" class="punt">ENG</li>
                 <li @click="language" data-lang="SPA" class="punt"> SPA</li>
-                <li @click="language" data-lang="POR" class="punt"> POR</li>
+                <!-- <li @click="language" data-lang="POR" class="punt; display:none"> POR</li> -->
 
               </ul>
             </li>
