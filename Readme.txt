@@ -6,7 +6,7 @@ Added some sections.
 
 Wanted to have language switching, I implemented this function using Vue.js
 
-You can see it in all its glory here: https://duchoprog.github.io/Lyttone/
+You can see it in all its glory here: http://www.lyttone.com/
 
 See you soon!
 
