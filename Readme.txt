@@ -1,7 +1,14 @@
+Hey, thanks for reading!
+
 I adapted this from a template.
-Added sections.
+
+Added some sections.
+
 Wanted to have language switching, I implemented this function using Vue.js
 
+You can see it in all its glory here: https://duchoprog.github.io/Lyttone/
+
+See you soon!
 
 
 
